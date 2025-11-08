@@ -29,8 +29,8 @@ def main():
     parser = argparse.ArgumentParser(description='Send multiple HTTP requests to localhost:80')
     parser.add_argument('-n', '--number', type=int, default=1000,
                         help='Number of requests to send (default: 1000)')
-    parser.add_argument('-c', '--concurrent', type=int, default=1,
-                        help='Number of concurrent requests (default: 1)')
+    parser.add_argument('-c', '--concurrent', type=int, default=10,
+                        help='Number of concurrent requests (default: 10)')
     parser.add_argument('-u', '--url', type=str, default='http://localhost:80',
                         help='URL to send requests to (default: http://localhost:80)')
     

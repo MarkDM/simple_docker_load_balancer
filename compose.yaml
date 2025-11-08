@@ -46,3 +46,5 @@ services:
     depends_on:
       - python-server-1
       - python-server-2
+      - python-server-3
+      - python-server-4
